@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi, I'm Shobit</title>
+  <meta name="description" content="Shobit's personal portfolio page.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg-color: #fdf6e3;
+      --text-color: #2c3e50;
+      --accent-color: #f39c12;
+      --header-bg: linear-gradient(to right, #f39c12, #f1c40f);
+      --card-bg: #ffffff;
+      --footer-bg: #2c3e50;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      position: relative;
+      min-height: 100vh;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Fibonacci_Spiral.svg/512px-Fibonacci_Spiral.svg.png');
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 40%;
+      opacity: 0.95;
+    }
+
+    header {
+      background: var(--header-bg);
+      color: white;
+      text-align: center;
+      padding: 4em 1em 3em;
+      position: relative;
+      animation: fadeInDown 1s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 0 auto;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.15em solid white;
+      width: 0;
+      animation: typing 6s steps(50, end) forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: white; }
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2em auto;
+      padding: 1em;
+      display: grid;
+      gap: 2em;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 2em;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s, box-shadow 0.4s;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      color: var(--accent-color);
+      margin-bottom: 0.5em;
+    }
+
+    .card p, .card li {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5em;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #d68910;
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+      margin-top: 3em;
+      animation: fadeInUp 1s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; }
+    }
+
+    .footer-icons a {
+      margin: 0 0.5em;
+      font-size: 1.5em;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .footer-icons a:hover {
+      color: #f39c12;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 1em;
+      padding: 0.8em 1.5em;
+      background: var(--accent-color);
+      color: white;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .contact-btn:hover {
+      background: #d68910;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hi, I'm Shobit</h1>
+    <p>Business Analyst | Research Analyst | Tech Enthusiast | Music Composer</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <p>Business Analytics postgrad with a tech edge and experience in data science, web tech, and dashboard design. Passionate about building smart, scalable solutions using data.</p>
+    </section>
+
+    <section class="card">
+      <h2><i class="fas fa-code-branch"></i> Projects</h2>
+      <ul>
+        <li><strong>Geospatial Temp Analysis:</strong> Forecasted global temperatures using 100+ years of data and ML models.</li>
+        <li><strong>Nike Equity Study:</strong> Modelled Nike's financial performance and growth patterns.</li>
+        <li><strong>UK Property Forecast:</strong> Cleaned and predicted trends in the UK housing market.</li>
+        <li><strong>Smart Electricity App (WIP):</strong> AI-based app to cut energy usage and costs in cities.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <ul>
+        <li><strong>CompuCom – Network Engineer:</strong> Provided IT solutions for Claire's stores globally.</li>
+        <li><strong>Amazon – Tech Advisor:</strong> Cloud storage expert for Amazon customers worldwide.</li>
+        <li><strong>AndStirred – Marketing:</strong> Boosted product distribution and brand sampling campaigns.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <ul>
+        <li><strong>University of Greenwich:</strong> MSc Business Analytics</li>
+        <li><strong>Trinity College of Engineering:</strong> BTech Computer Science</li>
+        <li><strong>Arihant School of Science:</strong> HSC</li>
+        <li><strong>The Bishops Co-Ed School:</strong> ICSE</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2><i class="fas fa-tools"></i> Skills</h2>
+      <p><strong>Technical:</strong> Python, SQL, Tableau, AWS, GCP, Excel, Machine Learning, Deep Learning, Jupyter</p>
+      <p><strong>Soft Skills:</strong> Communication, Problem Solving, Critical Thinking, Collaboration</p>
+    </section>
+
+    <section class="card">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <p>Email me at: <a href="mailto:klshobit21@gmail.com">klshobit21@gmail.com</a></p>
+      <a class="contact-btn" href="mailto:klshobit21@gmail.com">Let's Connect</a>
+      <p>Follow me on
+        <a href="https://www.linkedin.com/in/shobit-koul/" target="_blank">LinkedIn</a> |
+        <a href="https://www.youtube.com/channel/UC8v59vKcl0e6ZApv994vPfg" target="_blank">YouTube</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SHO.co. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/shobit-koul/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/channel/UC8v59vKcl0e6ZApv994vPfg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:klshobit21@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
