@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shobit Koul | Business Analyst & Data Scientist</title>
+
+  <meta name="description" content="Shobit Koul - Business Analyst & Data Scientist. Delivering analytics, predictive modelling, dashboards, and data-driven solutions across retail and operational environments.">
+  <meta name="keywords" content="Business Analyst, Data Scientist, Python, Tableau, Machine Learning, Dashboard, Analytics, Projects, Electricity Forecasting, Predictive Modelling">
+  <meta name="author" content="Shobit Koul">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --accent: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+
+    header { text-align:center; padding:4rem 1rem; background: radial-gradient(circle, #1e293b, #020617); }
+    header h1 { font-size:3rem; }
+    header p { color:var(--muted); margin-top:1rem; }
+
+    .header-buttons { margin-top:1.5rem; }
+    .header-buttons a { margin:0 0.5rem; padding:0.6rem 1.2rem; background:var(--accent); color:black; border-radius:6px; font-weight:bold; text-decoration:none; }
+
+    .container { max-width:1100px; margin:auto; padding:2rem 1rem; display:grid; gap:2rem; }
+    .card { background:var(--card); padding:1.5rem; border-radius:16px; border:1px solid rgba(255,255,255,0.05); }
+    h2 { color:var(--accent); margin-bottom:1rem; }
+
+    .carousel { position: relative; overflow: hidden; }
+    .carousel-track { display: flex; transition: transform 0.5s ease; }
+    .carousel-card { min-width: 100%; padding: 1rem; background:#020617; border-radius:12px; border:1px solid rgba(255,255,255,0.1); opacity: 0.6; transform: scale(0.95); transition: all 0.4s ease; }
+    .carousel-card.active { opacity:1; transform: scale(1); border-color: var(--accent); }
+    .carousel-card h3 { color: var(--accent); }
+    .carousel-card span { color: var(--muted); font-size:0.85rem; }
+    .carousel-controls { display:flex; justify-content:space-between; margin-top:1rem; }
+
+    .btn { cursor:pointer; padding:0.5rem 1rem; background:var(--accent); border:none; border-radius:6px; font-weight:bold; text-decoration:none; display:inline-block; }
+    ul { padding-left:1.2rem; }
+
+    footer { text-align:center; padding:2rem; color:var(--muted); }
+    .side-by-side { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Shobit Koul</h1>
+  <p>Business Analyst • Data Scientist • Tech Enthusiast</p>
+
+  <div class="header-buttons">
+    <a href="https://www.linkedin.com/in/shobit-koul/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Shobitkoul51" target="_blank">GitHub</a>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="card">
+  <h2>What I Do</h2>
+  <p>Computer Engineer with a postgraduate degree in Business Analytics. I specialise in turning raw data into business decisions through analytics, modelling, and stakeholder communication.</p>
+</section>
+
+<section class="card">
+  <h2>Where I've Delivered Impact</h2>
+
+  <div class="carousel" id="expCarousel">
+    <div class="carousel-track">
+      <div class="carousel-card active">
+        <h3>CompuCom – Network Engineer</h3>
+        <span>Nov 2023 – Sep 2024</span>
+        <ul>
+          <li>Analyzed operational data across 200+ retail outlets to uncover recurring system failures</li>
+          <li>Identified root causes and recommended process improvements improving service continuity</li>
+          <li>Collaborated with cross-functional teams translating business requirements into technical fixes</li>
+          <li>Maintained structured documentation enabling better reporting and workflow tracking</li>
+        </ul>
+      </div>
+
+      <div class="carousel-card">
+        <h3>Amazon – Technical Advisor</h3>
+        <span>Apr 2023 – Jul 2023</span>
+        <ul>
+          <li>Analyzed high-volume customer support datasets to identify recurring operational issues</li>
+          <li>Improved workflow efficiency by highlighting bottlenecks and recommending adjustments</li>
+          <li>Translated complex technical issues into clear solutions for non-technical customers</li>
+          <li>Produced structured reports enabling internal teams to drive service improvements</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="btn" onclick="moveSlide('exp', -1)">←</button>
+    <button class="btn" onclick="moveSlide('exp', 1)">→</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Personal Projects</h2>
+  <div class="carousel" id="projCarousel">
+    <div class="carousel-track">
+      <div class="carousel-card active">
+        <h3>Electricity Demand Forecasting</h3>
+        <p>Built a fast analytics pipeline to forecast the Dreadnaught building’s hourly electricity usage one week ahead, simulate targeted reductions, and optimise load distribution without increasing total energy consumption.</p>
+        <p><strong>Tech:</strong> Python, Pandas, NumPy, Prophet, Scikit-Learn</p>
+        <ul>
+          <li>Built end-to-end forecasting pipeline using real-world hourly datasets</li>
+          <li>Performed feature engineering and validation using Pandas and NumPy</li>
+          <li>Applied Prophet and Scikit-Learn models to predict demand patterns</li>
+          <li>Simulated "what-if" scenarios to reduce peak load and improve efficiency</li>
+        </ul>
+        <div style="margin-top:1rem;">
+          <a href="https://github.com/Shobitkoul51/electricity-usage-optimization" target="_blank" class="btn">View Project Code</a>
+        </div>
+      </div>
+      <div class="carousel-card">
+        <h3>Global Temperature Forecasting</h3>
+        <ul>
+          <li>Processed and cleaned 100+ years of global climate data</li>
+          <li>Conducted exploratory analysis to identify long-term trends</li>
+          <li>Developed predictive models for temperature forecasting</li>
+          <li>Presented insights via dashboards for strategic interpretation</li>
+        </ul>
+      </div>
+      <div class="carousel-card">
+        <h3>Pricing Analytics</h3>
+        <ul>
+          <li>Analyzed telecom and property pricing datasets</li>
+          <li>Identified key drivers influencing pricing strategies</li>
+          <li>Applied statistical modelling and scenario analysis</li>
+          <li>Delivered business-focused dashboards and reports</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="btn" onclick="moveSlide('proj', -1)">←</button>
+    <button class="btn" onclick="moveSlide('proj', 1)">→</button>
+  </div>
+</section>
+
+<div class="side-by-side">
+  <section class="card">
+    <h2>Capabilities</h2>
+    <ul>
+      <li>Dashboard building</li>
+      <li>Predictive modelling</li>
+      <li>ML model building</li>
+      <li>Python Programming</li>
+      <li>Report building</li>
+      <li>Jupyter</li>
+      <li>ServiceNow</li>
+      <li>SystemOne</li>
+      <li>Tableau</li>
+      <li>MS Excel</li>
+      <li>Flow Modelling</li>
+      <li>Deep learning</li>
+      <li>Retail analysis</li>
+      <li>Process Mapping</li>
+      <li>SQL</li>
+      <li>Pivot tables</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Part-Time Ventures</h2>
+    <ul>
+      <li>NHS Receptionist – Skywas Medical, then Pentelow Practice – Front desk and patient support, managed schedules and communication</li>
+      <li>AndStirred – Assisted in product distribution and brand promotion campaigns</li>
+      <li>Kombucha Sales Venture – Marketing and sales</li>
+    </ul>
+  </section>
+</div>
+
+<section class="card">
+  <h2>Get In Touch</h2>
+  <p>Email: <a href="mailto:koul.shobit.ace@gmail.com">koul.shobit.ace@gmail.com</a></p>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Shobit Koul</p>
+</footer>
+
+<script>
+  const state = { exp: 0, proj: 0 };
+
+  function moveSlide(type, direction) {
+    const carousel = document.querySelector(`#${type}Carousel .carousel-track`);
+    const cards = carousel.children;
+    state[type] += direction;
+    if (state[type] < 0) state[type] = cards.length - 1;
+    if (state[type] >= cards.length) state[type] = 0;
+    carousel.style.transform = `translateX(-${state[type] * 100}%)`;
+    Array.from(cards).forEach((card, i) => {
+      card.classList.toggle('active', i === state[type]);
+    });
+  }
+</script>
+
+</body>
+</html>
